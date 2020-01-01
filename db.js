@@ -1,15 +1,9 @@
 const mongoose = require("mongoose");
 const { DB_NAME, DB_USER, DB_PORT, DB_HOST } = process.env;
 
-console.log('sdsd', process.env);
-
-
 mongoose.Promise = global.Promise;
 
 const connectionUrl = `mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`;
-
-console.log('conurl', connectionUrl);
-
 
 mongoose
   .connect(connectionUrl, { useNewUrlParser: true })
