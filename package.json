@@ -5,11 +5,17 @@
   "repository": "git@github.com:wowua/adm-app.server.git",
   "author": "Vladimir Sabantsev <vladimir.sabantsev@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon index"
+  },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "koa": "^2.11.0",
     "koa-body": "^4.1.1",
     "koa-cors": "^0.0.16",
     "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.8.3",
+    "nodemon": "^2.0.2"
   }
 }
