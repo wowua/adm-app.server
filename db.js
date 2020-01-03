@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { DB_NAME, DB_USER, DB_PORT, DB_HOST } = process.env;
+const { DB_NAME, DB_PORT, DB_HOST } = process.env;
 
 mongoose.Promise = global.Promise;
 
@@ -12,7 +12,7 @@ mongoose
 const db = mongoose.connection;
 
 db.on("connected", () => {
-  console.log(`Mongoose connection open on ${DB_PORT}`);
+  console.log(`Mongoose connection open on ${connectionUrl}`);
 });
 
 db.on("error", error => console.log(error));
