@@ -4,7 +4,6 @@ const koaCors = require("koa-cors");
 const router = require("./router");
 const koaBody = require("koa-body");
 
-require("dotenv").config();
 require("./db");
 
 app.use(koaBody());
